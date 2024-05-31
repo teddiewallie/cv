@@ -1,0 +1,169 @@
+\documentclass[11pt,a4paper]{moderncv}
+\moderncvtheme[blue]{banking}
+\nopagenumbers{}
+
+\usepackage[T1]{fontenc}
+\usepackage{inputenc}
+\usepackage[scale=0.9]{geometry}
+\usepackage{tabularx}
+\usepackage{mathpazo}
+
+\renewcommand*{\labelitemi}{-}
+
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}
+
+\newcommand*{\experienceentry}[5][1.5mm]{
+    \subsection{#2} \vspace{-1.5mm}
+    \begin{tabularx}{\textwidth}{LR}
+        {\itshape #3} & {\itshape #4, #5}
+    \end{tabularx}
+    \par\addvspace{#1}
+}
+
+\newcommand*{\educationentry}[4][0.5mm]{
+    \begin{tabularx}{\textwidth}{LR}
+        {\bfseries #3} & {\bfseries #4} \\
+    \end{tabularx}
+    {\itshape #2}
+    \par\addvspace{#1}
+}
+
+\newcommand*{\scoreentry}[3][2.5mm]{
+    {\bfseries #2} \\
+    {\itshape #3}
+    \par\addvspace{#1}
+}
+
+\firstname{Ted}
+\familyname{Wall}
+
+\begin{document}
+\maketitle
+\vspace{-9.0mm}
+\begin{tabularx}{\textwidth}{C C C}
+    \emailsymbol\enspace \emaillink{ted@tedwall.se} & \mobilephonesymbol\enspace 0792010453 & \homepagesymbol\enspace \href{https://tedwall.se}{tedwall.se}
+\end{tabularx}
+\vspace{-2.0mm}
+
+% left column
+\begin{minipage}[t]{0.62\textwidth}
+\section{ERFARENHETER}
+\experienceentry{Svenska Spel}{Systemutvecklare}{Sep 2019 - Sep 2023}{Visby}
+
+\textbf{Team CMS \textit{2019-2022}}
+\begin{itemize}
+    \item Deltog i det dagliga arbetet med utveckling i Svenska Spels CMS.
+    \item Utökat testansvar med utveckling av GUI- och unittester.
+    \item Scrum, React, Redux, Kotlin, Handlebars, Express
+\end{itemize}
+\vspace{1.0mm}
+
+\textbf{Team Core \textit{2022-2023}}
+\begin{itemize}
+    \item Underhåll av legacyprodukter.
+    \item Hjälp och avlastning till andra team kring utveckling och deploy.
+    \item Defensiv utveckling och uppdatering av utdaterade komponenter.
+    \item Felsökning och djupdyk i komplexa problem.
+\end{itemize}
+\vspace{2.0mm}
+
+\experienceentry{PayEx}{Systemutvecklare}{Aug 2018 - Aug 2019}{Visby}
+
+\textbf{Team Ledger \textit{2018-2019}}
+\begin{itemize}
+  \item Back- och Frontendutveckling i diverse system hos PayEx.
+  \item Utveckling av diagram i Highcharts.
+\end{itemize}
+\vspace{2.0mm}
+
+\experienceentry{iGW}{Systemutvecklare}{Dec 2017 - Jul 2018}{Kista}
+\textbf{Byteport}
+\begin{itemize}
+  \item Utveckling i deras datahanteringssystem.
+  \item Python, Django, HTML, JavaScript, CSS, Bootstrap
+\end{itemize}
+\vspace{2.0mm}
+
+\experienceentry{Sigma IT Consulting}{Systemutvecklare}{Sep 2017 - Nov 2017}{Stockholm}
+\textbf{Swedish Space Center}
+\begin{itemize}
+  \item Kort karriär som konsult
+\end{itemize}
+\vspace{2.0mm}
+
+\experienceentry{IST Sweden}{Systemutvecklare}{Aug 2015 - Sep 2017}{Växjö}
+
+\textbf{Team Tyrion}
+\begin{itemize}
+    \item Utveckling av diverse system i Java, Angular och MariaDB.
+    \item Nyutveckling av en länkportal åt kommuner och företag.
+\end{itemize}
+\vspace{1.0mm}
+
+\textbf{Nyutveckling av ett helt skolsystem}
+\begin{itemize}
+    \item Tät kontakt med kund i ett team bestående av fem personer.
+\end{itemize}
+\vspace{2.0mm}
+
+\experienceentry{McDonalds}{Restaurangbiträde}{Mar 2007 - Maj 2012}{Oskarshamn, Kalmar, Jönköping}
+\vspace{-4.0mm}
+\textbf{Restaurangbiträde}
+\begin{itemize}
+  \item Sedvanliga arbetsuppgifter för ett restaurangbiträde
+  \item Kök, kassa, drive-in
+\end{itemize}
+
+\textbf{Lager- och leveransansvarig}
+\begin{itemize}
+  \item Löpande inköp av råvaror och materiel
+  \item Leveransmottagning och lagerhantering
+\end{itemize}
+
+\textbf{Städ och maskinunderhåll}
+\begin{itemize}
+  \item Nattligt grovstäd i och bakom maskiner
+  \item Regelbundet underhåll av glassmaskinen
+\end{itemize}
+
+\end{minipage}
+\hfill
+% right column
+\begin{minipage}[t]{0.35\textwidth}
+\section{PROFIL}
+Driven, passionerad och lösningsorienterad systemutvecklare tillika tekniknörd, med en bred tvärkompetens som sträcker sig över många områden och en djup kompetens kring de områden som intresserar mig mest.
+
+\section{SKILLS}
+Linux, JavaScript, Photoshop, Jenkins, Windows, Jira, Git, Neovim, Docker, CSS, NGINX, \LaTeX, Python, Java, UML, MacOS, Confluence, React, Redux, HTML, Angular, TypeScript, Neovim, PHP, NGINX.
+
+\section{UTBILDNING}
+\educationentry{Diverse kurser, 2013 - 2016}{Linnéuniversitetet}{Växjö}
+\educationentry{Javaprogrammerare}{EC Utbildning}{Malmö}
+
+\section{SPRÅK}
+\begin{itemize}
+    \item Svenska (Modersmål)
+    \item Engelska (Flytande)
+\end{itemize}
+
+\section{INTRESSEN}
+\begin{itemize}
+    \item Teknik och system
+    \item Jonglering
+    \item Hantverk
+    \item Piano och gitarr
+    \item Bräd- och rollspel
+\end{itemize}
+
+\section{ÖVRIGT}
+\begin{tabularx}{\textwidth}{L L}
+  Körkort & B \\
+  Referens & På begäran
+
+\end{tabularx}
+
+\end{minipage}
+
+\end{document}
