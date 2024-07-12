@@ -7,8 +7,21 @@
 \usepackage[scale=0.9]{geometry}
 \usepackage{tabularx}
 \usepackage{mathpazo}
+\usepackage{csquotes}
 
 \renewcommand*{\labelitemi}{-}
+
+\newenvironment{changemargin}[2]{%
+\begin{list}{}{%
+\setlength{\topsep}{0pt}%
+\setlength{\leftmargin}{#1}%
+\setlength{\rightmargin}{#2}%
+\setlength{\listparindent}{\parindent}%
+\setlength{\itemindent}{\parindent}%
+\setlength{\parskip}{\baselineskip}%
+\setlength{\parindent}{0pt}%
+}%
+\item[]}{\end{list}}
 
 \newcolumntype{L}{>{\raggedright\arraybackslash}X}
 \newcolumntype{C}{>{\centering\arraybackslash}X}
@@ -40,6 +53,47 @@
 \familyname{Wall}
 
 \begin{document}
+% \maketitle
+% \vspace{-9.0mm}
+% \begin{tabularx}{\textwidth}{C C C}
+%     \emailsymbol\enspace \emaillink{ted@tedwall.se} & \mobilephonesymbol\enspace 0792010453 & \homepagesymbol\enspace \href{https://tedwall.se}{tedwall.se}
+% \end{tabularx}
+% \vspace{-2.0mm}
+% 
+% \begin{changemargin}{2cm}{2cm}
+% 
+% \large
+% 
+% En 37-årig tekniknörd som drivs av att hålla hjärnan ung genom att ständigt låta mig bli utmanad och genom att frekvent lära mig nya saker. Inte minst syns det på mitt breda spann av intressen och hobbies, med allt från Linux till eldjonglering till tangentbordsbygge till musikproduktion till campervansbygge till routervirtualisering med hjälp av Proxmox och OPNSense i verktygsbältet. Den gemensamma nämnaren mellan alla intressen är flowet.
+% 
+% \textit{Flow} är ett vedertaget begrepp som Wikipedia beskriver så här:
+% 
+% \begin{changemargin}{1cm}{1cm}
+%   \vspace{-4mm}
+%   \textit{Det är ett medvetandetillstånd som inträffar när en individ blir helt uppslukad av en aktivitet och går bortom sin reflekterande självmedvetenhet samtidigt som den får en djup känsla av kontroll.}
+% \end{changemargin}
+% 
+% Att uppleva flow är någonting som jag i största möjliga mån låter prägla hela mitt liv, och det är antagligen den största orsaken till att jag valde att viga mitt yrkesliv åt utveckling. Att kunna zona in och fokusera helhjärtat på en uppgift under många timmar är otroligt värdefullt; inte minst eftersom det låter mig djupdyka i stora komplexa kodbaser och nästan synestesiskt måla upp dataflödet i huvudet.
+% 
+% Som utvecklare är jag mån om att hålla kodbasen prydlig och att koda defensivt. Jag trivs i uppgifter som innebär bred informationsinsamling och där ett gediget förarbete krävs. Termer som \textit{definition of done} och \textit{reducerad kodskuld} ligger mig varmt om hjärtat.
+% 
+% Flow gör mig dessutom till en vass problemlösare. Mer eller mindre all min tekniska kompetens har jag samlat på mig genom problem jag stött på eller utsatt mig själv för. Som ett exempel så har Arch Linux varit mitt dagliga operativsystem i snart två decennier, så det har blivit en och annan felsökning och totalhaveri på den tiden.
+% 
+% Efter att ha läst er annons så kan jag konstatera att er teknikstack är synnerligen intressant och att språken och verktygen ni radar upp är något jag stött på tidigare, även om det nu var ungefär ett decennium sedan jag arbetade i Java och Spring Boot sist.
+% 
+% För både er och min skull så vill jag dock vara tydlig med de utmaningar jag har i ett tidigt skede. Förra året fick veta att jag har autism och några år innan det fick jag reda på att jag har ADHD. Utöver det har jag C-PTSD samt Crohn's sedan tidigare.
+% 
+% Trots floran av diagnoser så kräver jag inte särskilt mycket anpassning på arbetsplatser, och de flesta behoven elimineras om jag helt enkelt får möjlighet att arbeta på distans den allra största delen av tiden. Vilket klaffar in bra med er arbetsplats. De främsta utmaningarna jag har i det dagliga arbetet är planering i stora grupper, samt att min hjärna är som en databas utan datumkolumn; att estimera uppgifter i tid istället för komplexitet är ungefär lika pricksäkert som vädret i april.
+% 
+% Med vänlig hälsning \\
+% Ted Wall
+% 
+% 
+% 
+% \end{changemargin}
+% 
+% \clearpage
+
 \maketitle
 \vspace{-9.0mm}
 \begin{tabularx}{\textwidth}{C C C}
@@ -47,7 +101,6 @@
 \end{tabularx}
 \vspace{-2.0mm}
 
-% left column
 \begin{minipage}[t]{0.62\textwidth}
 \section{ERFARENHETER}
 \experienceentry{Svenska Spel}{Systemutvecklare}{Sep 2019 - Sep 2023}{Visby}
@@ -132,11 +185,14 @@
 \hfill
 % right column
 \begin{minipage}[t]{0.35\textwidth}
+\section{MÅL}
+Att fortsätta utvecklas i min roll som systemutvecklare i synergi med min egen personliga utveckling.
+
 \section{PROFIL}
-Driven, passionerad och lösningsorienterad systemutvecklare tillika tekniknörd, med en bred tvärkompetens som sträcker sig över många områden och en djup kompetens kring de områden som intresserar mig mest.
+Driven, nyfiken, lösningsorienterad och passionerad systemutvecklare tillika tekniknörd, med en bred tvär-kompetens som sträcker sig över många områden och en djup kompetens kring de områden som intresserar mig mest.
 
 \section{SKILLS}
-Linux, JavaScript, Photoshop, Jenkins, Windows, Jira, Git, Neovim, Docker, CSS, NGINX, \LaTeX, Python, Java, UML, MacOS, Confluence, React, Redux, HTML, Angular, TypeScript, Neovim, PHP, NGINX, Proxmox, Home Assistant, RabbitMQ, SQL, Node.js, Express, Arduino, QMK Firmware.
+Linux, JavaScript, Photoshop, Jenkins, Windows, Jira, Git, Docker, CSS, NGINX, \LaTeX, Python, Java, UML, MacOS, Confluence, React, Redux, HTML, Angular, TypeScript, Neovim, PHP, NGINX, Proxmox, SQL, Node.js, Express, Arduino, QMK Firmware, REST, shellscripts, et cetera.
 
 \section{UTBILDNING}
 \educationentry{Diverse kurser, 2013 - 2016}{Linnéuniversitetet}{Växjö}
@@ -154,7 +210,7 @@ Linux, JavaScript, Photoshop, Jenkins, Windows, Jira, Git, Neovim, Docker, CSS, 
     \item Jonglering
     \item Hantverk
     \item Piano och gitarr
-    \item Bräd- och rollspel
+    \item Bräd-, roll- och datorspel
 \end{itemize}
 
 \section{ÖVRIGT}
